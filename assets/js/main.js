@@ -42,6 +42,20 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Show thank you message
+    document.getElementById("thankYouMessage").style.display = "block";
+
+    // Optionally clear the form
+    this.reset();
+  });
+</script>
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
