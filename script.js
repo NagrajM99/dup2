@@ -1,3 +1,4 @@
+
 // Import or create instance of the index class
 // Note: If using modules, you'd import this. For now, we'll assume the compiled JS is available.
 
