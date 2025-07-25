@@ -186,14 +186,14 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/mvgqkjen" method="post" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form id="contactForm" class="contact__form">
+                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                        <input type="text" id="subject" placeholder="Subject" class="contact__input" required>
+                        <textarea id="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
+                        <button type="button" id="sendButton" onclick="sendMail()" class="contact__button button">Send</button>
                     </form>
                 </div>
-                <button type="submit" onclick="sendMail()">Send</button>
             </section>
         </main>
 
