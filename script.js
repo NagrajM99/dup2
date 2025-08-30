@@ -22,7 +22,7 @@ function sendMail(){
     return;
   }
     
-  emailjs.send("service_4r5nz0s", "template_msdkwna",parms).then(() => {
+  emailjs.send("service_rvvq7c4","template_pt4o1jb", parms).then(() => {
     alert("Email Sent!!");
     console.log("Mail sent successfully!");
     
